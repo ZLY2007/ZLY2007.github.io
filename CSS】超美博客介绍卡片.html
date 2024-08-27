@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山羊の前端小窝</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+        }
+
+        .shell {
+            width: 780px;
+            height: 580px;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .head {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .head::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("./img/2.avif");
+            background-size: cover;
+            z-index: -1;
+            transform: skewY(-4deg);
+            transform-origin: 0 0;
+        }
+
+        .cover {
+            position: absolute;
+            top: 190px;
+            left: 25px;
+            width: 220px;
+            z-index: 2;
+            border-radius: 500px;
+            border: 10px #fff solid;
+            box-shadow: 0 5px 10px #00000065;
+        }
+
+        .data {
+            padding: 190px 0 0 280px;
+            text-shadow: 0 0 20px #000;
+        }
+
+        .data .title1 {
+            color: white;
+            font-size: 50px;
+            font: 900 50px '';
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .data .title1 span {
+            position: absolute;
+            top: 17px;
+            margin-left: 12px;
+            background: #ffe44c;
+            border-radius: 5px;
+            color: #000000;
+            font-size: 14px;
+            padding: 0px 4px;
+        }
+
+        .data .title2 {
+            color: #fff;
+            font: 500 24px '';
+        }
+
+        .foot {
+            line-height: 26px;
+            color: #444;
+        }
+
+        .tags {
+            padding-left: 30px;
+            padding-top: 100px;
+            width: 250px;
+            float: left;
+            text-align: center;
+        }
+
+        .tag {
+            background: rgb(149, 178, 255);
+            color: #fff;
+            border-radius: 10px;
+            padding: 3px 8px;
+            font-size: 14px;
+            margin-right: 4px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background: #eee4ad;
+            color: #444;
+        }
+
+        .introduce {
+            padding: 25px 0 0 35px;
+            width: 480px;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="shell">
+        <img src="./img/1.avif" alt="" class="cover">
+        <div class="head">
+            <div class="data">
+                <div class="title1">道心の前端小窝<span>BILIBILI</span></div>
+                <div class="title2">前端开发热爱者</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="tags">
+                <span class="tag">#HTML</span>
+                <span class="tag">#CSS</span>
+                <span class="tag">#JS</span>
+                <span class="tag">#JQ</span>
+                <span class="tag">#bootstrap</span>
+                <span class="tag">#PR</span>
+                <span class="tag">#AE</span>
+                <span class="tag">#Vscode</span>
+            </div>
+            <div class="introduce">
+                <p>
+                    大家好，我是一名编程语言爱好者，很高兴有机会介绍自己 
+                    你。我对 CSS 有浓厚的兴趣，并且热爱运动。 
+                    首先，让我谈谈我对 CSS 的热爱。
+                    CSS 是一种用于 Web 设计和布局的语言，
+                    它使 Web 页面美观、易读且易于导航。
+                    我喜欢 CSS 的一点是它的 灵活性，使用不同的样式和布局......
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> 
